@@ -1,11 +1,9 @@
-const page = () => {
+const Home = () => {
   return (
     <div>
-      <h1 className='text-4xl'>
-        This is my meghna home made cake delivery app
-      </h1>
+      <h1 className='text-3xl'>This is home page</h1>
     </div>
   );
 };
 
-export default page;
+export default Home;
