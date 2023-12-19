@@ -1,3 +1,4 @@
+import ButtonOutline from '../shared/ButtonOutline';
 import Container from './Container';
 import Title from './Title';
 const popularCakesData = [{}, {}, {}];
@@ -14,7 +15,7 @@ const NewCakes = () => {
               key={index}
               className='group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]'
             >
-              <div className='w-full h-52 object-cover flex flex-col justify-center items-center bg-blue-600 rounded-t-xl'>
+              <div className='w-full h-52 object-cover flex flex-col justify-center items-center rounded-t-xl'>
                 <img
                   src='https://cutt.ly/awDekmaY'
                   alt=''
@@ -38,7 +39,7 @@ const NewCakes = () => {
                   className='w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
                   href='#'
                 >
-                  উইশলিষ্ট এ রাখুন
+                  বিস্তারিত দেখুন
                 </a>
                 <a
                   className='w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
@@ -51,6 +52,7 @@ const NewCakes = () => {
           ))}
         </div>
         {/* <!-- End Grid --> */}
+        <ButtonOutline>আরোও দেখুন</ButtonOutline>
       </Container>
     </section>
   );

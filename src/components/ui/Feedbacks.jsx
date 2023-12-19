@@ -17,7 +17,7 @@ const Feedbacks = () => {
             >
               <div className='p-4 md:p-5'>
                 <div className='flex flex-col gap-4 justify-between items-center'>
-                  <div className='w-full h-52 object-cover flex flex-col justify-center items-center bg-blue-600 rounded-t-xl'>
+                  <div className='w-full h-52 object-cover flex flex-col justify-center items-cente  rounded-t-xl'>
                     <img
                       src={
                         (index + 1) % 2 === 0
