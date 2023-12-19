@@ -1,3 +1,6 @@
+import Feedbacks from '@/components/ui/Feedbacks';
+import NewCakes from '@/components/ui/NewCakes';
+import PopularCakes from '@/components/ui/PopularCakes';
 import Carousel from '../components/ui/CarouselComponent';
 
 const Home = () => {
@@ -10,6 +13,9 @@ const Home = () => {
       </div>
       {/* carosel  */}
       <Carousel />
+      <PopularCakes />
+      <NewCakes />
+      <Feedbacks />
     </section>
   );
 };

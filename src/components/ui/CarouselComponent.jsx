@@ -26,9 +26,7 @@ const CarouselComponent = () => {
       slide.style.left = `${index * 100}%`;
     });
     slidesNode.forEach((slide) => {
-      slide.style.transform = `translate(-${counter * 100}%) skewX(${
-        counter * 360
-      }deg)`;
+      slide.style.transform = `translate(-${counter * 100}%)`;
     });
   }, [counter]);
   return (
