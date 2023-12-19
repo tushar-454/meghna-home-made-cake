@@ -33,7 +33,7 @@ const navItems = [
 
 const Header = () => {
   return (
-    <header className='bg-slate-100 dark:bg-slate-900'>
+    <header className='bg-slate-100 sticky top-0 z-50 dark:bg-slate-900'>
       <Container>
         <div className='hidden sm:block'>
           <div className='flex justify-between items-center py-3'>
