@@ -107,7 +107,7 @@ const Cart = () => {
                         <Link href={'/order'}>
                           <button
                             type='button'
-                            class='py-3 px-4 whitespace-nowrap inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-500 text-white hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                            className='py-3 px-4 whitespace-nowrap inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-500 text-white hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
                           >
                             পরবর্তী ধাপে যান
                           </button>

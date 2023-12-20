@@ -1,6 +1,8 @@
 import Container from '@/components/ui/Container';
 import Title from '@/components/ui/Title';
+import Image from 'next/image';
 import { IoSearchOutline } from 'react-icons/io5';
+import { TbCurrencyTaka } from 'react-icons/tb';
 const popularCakesData = [
   {},
   {},
@@ -62,8 +64,10 @@ const Cakes = () => {
               className='group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]'
             >
               <div className='w-full h-52 object-cover flex flex-col justify-center items-center rounded-t-xl'>
-                <img
+                <Image
                   src='https://cutt.ly/wwDw1rq1'
+                  width={100}
+                  height={100}
                   alt=''
                   className='w-full h-full object-cover'
                 />
@@ -79,6 +83,17 @@ const Cakes = () => {
                   ২ পাউন্ড এর সাদা ক্রিপ এর সাথে স্পেশাল কিটকেট চকলেট ফ্লেভারের
                   সাথে থাকছে সুন্দর সাজ সজ্জা
                 </p>
+                <h3 className='flex items-center text-xl font-semibold text-gray-800 mt-5 dark:text-gray-300 dark:hover:text-white'>
+                  <span>
+                    <span className='flex'>
+                      মূল্য (পাউন্ড) → ৬০০
+                      <TbCurrencyTaka />
+                    </span>{' '}
+                  </span>
+                  <sub>
+                    <del className='text-red-400'>৮০০</del>
+                  </sub>
+                </h3>
               </div>
               <div className='mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700'>
                 <a

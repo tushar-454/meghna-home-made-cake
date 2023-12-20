@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { TbCurrencyTaka } from 'react-icons/tb';
 import ButtonOutline from '../shared/ButtonOutline';
@@ -18,8 +19,10 @@ const NewCakes = () => {
               className='group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]'
             >
               <div className='w-full h-52 object-cover flex flex-col justify-center items-center rounded-t-xl'>
-                <img
+                <Image
                   src='https://cutt.ly/awDekmaY'
+                  width={100}
+                  height={100}
                   alt=''
                   className='w-full h-full object-cover'
                 />

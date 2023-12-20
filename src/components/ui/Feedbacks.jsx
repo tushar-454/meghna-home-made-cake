@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Container from './Container';
 import Title from './Title';
 const popularCakesData = [{}, {}, {}, {}, {}, {}];
@@ -18,13 +19,15 @@ const Feedbacks = () => {
               <div className='p-4 md:p-5'>
                 <div className='flex flex-col gap-4 justify-between items-center'>
                   <div className='w-full h-52 object-cover flex flex-col justify-center items-cente  rounded-t-xl'>
-                    <img
+                    <Image
                       src={
                         (index + 1) % 2 === 0
                           ? 'https://cutt.ly/XwDefdvc'
                           : 'https://cutt.ly/bwDexjav'
                       }
                       alt=''
+                      width={100}
+                      height={100}
                       className='w-full h-full object-cover'
                     />
                   </div>
