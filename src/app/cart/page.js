@@ -1,6 +1,7 @@
 import Container from '@/components/ui/Container';
 import Title from '@/components/ui/Title';
 import Image from 'next/image';
+import Link from 'next/link';
 import { AiFillDelete } from 'react-icons/ai';
 const carts = [{}, {}, {}, {}, {}, {}];
 const Cart = () => {
@@ -102,16 +103,15 @@ const Cart = () => {
                       <td className='px-6 py-4 whitespace-nowrap text-xl font-semibold text-slate-600 dark:text-slate-200'>
                         ৩২০০
                       </td>
-                      <td
-                        colSpan='5'
-                        className='px-6 py-4 whitespace-nowrap text-xl font-semibold text-slate-600 dark:text-slate-200'
-                      >
-                        <button
-                          type='button'
-                          class='py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-500 text-white hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
-                        >
-                          পরবর্তী ধাপে যান
-                        </button>
+                      <td colSpan='5' className='px-6 py-4 flex justify-end'>
+                        <Link href={'/order'}>
+                          <button
+                            type='button'
+                            class='py-3 px-4 whitespace-nowrap inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-500 text-white hover:bg-red-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                          >
+                            পরবর্তী ধাপে যান
+                          </button>
+                        </Link>
                       </td>
                     </tr>
                   </tfoot>

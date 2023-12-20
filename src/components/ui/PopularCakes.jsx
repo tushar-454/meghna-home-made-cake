@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import { TbCurrencyTaka } from 'react-icons/tb';
 import ButtonFill from '../shared/ButtonFill';
 import Container from './Container';
 import Title from './Title';
@@ -32,6 +34,17 @@ const PopularCakes = () => {
                   ২ পাউন্ড এর সাদা ক্রিপ এর সাথে স্পেশাল কিটকেট চকলেট ফ্লেভারের
                   সাথে থাকছে সুন্দর সাজ সজ্জা
                 </p>
+                <h3 className='flex items-center text-xl font-semibold text-gray-800 mt-5 dark:text-gray-300 dark:hover:text-white'>
+                  <span>
+                    <span className='flex'>
+                      মূল্য (পাউন্ড) → ৬০০
+                      <TbCurrencyTaka />
+                    </span>{' '}
+                  </span>
+                  <sub>
+                    <del className='text-red-400'>৮০০</del>
+                  </sub>
+                </h3>
               </div>
               <div className='mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700'>
                 <a
@@ -51,7 +64,9 @@ const PopularCakes = () => {
           ))}
         </div>
         {/* <!-- End Grid --> */}
-        <ButtonFill>আরোও দেখুন</ButtonFill>
+        <Link href={'/cakes'}>
+          <ButtonFill>আরোও দেখুন</ButtonFill>
+        </Link>
       </Container>
     </section>
   );
