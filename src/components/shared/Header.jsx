@@ -63,13 +63,17 @@ const Header = () => {
           </div>
         </div>
         {/* mobile device down menu like mobile  */}
-        <div className='block sm:hidden w-full fixed left-0 bottom-0'>
+
+        <div
+          style={{ zIndex: '9999' }}
+          className='block sm:hidden w-full fixed left-0 bottom-0'
+        >
           <div className='w-full grid items-start h-10 bg-slate-200'>
             <div className='flex gap-1 justify-between items-center px-5 relative -top-8 transition-all'>
               {navItems.map((item, index) => (
                 <Link
                   key={index}
-                  className='w-16 h-16 border-8 bg-white border-white flex justify-center items-center rounded-full shadow-xl'
+                  className='w-16 h-16 border-8 bg-white border-white flex justify-center items-center rounded-full shadow-xl z-50'
                   href={item.path}
                 >
                   {<item.icon className='text-3xl text-slate-900' />}

@@ -17,7 +17,7 @@ const TrackOrder = () => {
         <Title>আপনার অর্ডার ট্রেক করুন</Title>
         <div className='my-10 min-h-screen'>
           <form>
-            <div className='relative z-10 flex space-x-3 p-3 bg-white border rounded-lg shadow-lg shadow-gray-100 dark:bg-slate-900 dark:border-gray-700 dark:shadow-gray-900/[.2]'>
+            <div className='relative flex space-x-3 p-3 bg-white border rounded-lg shadow-lg shadow-gray-100 dark:bg-slate-900 dark:border-gray-700 dark:shadow-gray-900/[.2]'>
               <div className='flex-[1_0_0%]'>
                 <input
                   type='text'
@@ -167,7 +167,7 @@ const TrackOrder = () => {
                 কেক হাতে পাবার পর পিন কোডটি দিয়ে নিশ্চিত করুন
               </h1>
               <form className='mt-5'>
-                <div className='relative z-10 flex space-x-3 p-3 bg-white border rounded-lg shadow-lg shadow-gray-100 dark:bg-slate-900 dark:border-gray-700 dark:shadow-gray-900/[.2]'>
+                <div className='relative flex space-x-3 p-3 bg-white border rounded-lg shadow-lg shadow-gray-100 dark:bg-slate-900 dark:border-gray-700 dark:shadow-gray-900/[.2]'>
                   <div className='flex-[1_0_0%]'>
                     <input
                       type='number'

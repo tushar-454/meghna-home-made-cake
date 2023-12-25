@@ -4,7 +4,7 @@ import Container from '../ui/Container';
 
 const Footer = () => {
   return (
-    <footer className='bg-white rounded-lg dark:bg-gray-900 my-10'>
+    <footer className='bg-white rounded-lg dark:bg-gray-900 my-20 sm:my-10'>
       <Container>
         <div className='sm:flex sm:items-center sm:justify-between'>
           <a
