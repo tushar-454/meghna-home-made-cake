@@ -1,7 +1,7 @@
+import ButtonFill from '@/components/ui/ButtonFill';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TbCurrencyTaka } from 'react-icons/tb';
-import ButtonFill from '../shared/ButtonFill';
 import Container from './Container';
 import Title from './Title';
 const popularCakesData = [{}, {}, {}, {}, {}, {}];
@@ -68,7 +68,7 @@ const PopularCakes = () => {
         </div>
         {/* <!-- End Grid --> */}
         <Link href={'/cakes'}>
-          <ButtonFill>আরোও দেখুন</ButtonFill>
+          <ButtonFill displayName={'আরোও দেখুন'} />
         </Link>
       </Container>
     </section>

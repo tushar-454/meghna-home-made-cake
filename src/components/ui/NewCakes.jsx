@@ -1,7 +1,7 @@
+import ButtonOutline from '@/components/ui/ButtonOutline';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TbCurrencyTaka } from 'react-icons/tb';
-import ButtonOutline from '../shared/ButtonOutline';
 import Container from './Container';
 import Title from './Title';
 const popularCakesData = [{}, {}, {}];
@@ -69,7 +69,7 @@ const NewCakes = () => {
         </div>
         {/* <!-- End Grid --> */}
         <Link href={'/cakes'}>
-          <ButtonOutline>আরোও দেখুন</ButtonOutline>
+          <ButtonOutline displayName='আরোও দেখুন' />
         </Link>
       </Container>
     </section>
