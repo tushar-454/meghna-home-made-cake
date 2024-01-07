@@ -1,9 +1,9 @@
 import bKash from '@/assets/bkash_payment_logo.webp';
 import cod from '@/assets/cash-on-delivery.webp';
 import nagad from '@/assets/nagad-payment-banner.webp';
-import Input from '@/components/shared/Input';
 import TextArea from '@/components/shared/TextArea';
 import Container from '@/components/ui/Container';
+import Input from '@/components/ui/Input';
 import Title from '@/components/ui/Title';
 import Image from 'next/image';
 const orderList = [{}, {}, {}, {}, {}];
@@ -12,7 +12,7 @@ const Order = () => {
     <section>
       <Container>
         <Title>অর্ডার নিশ্চিত করুন</Title>
-        <div className='min-h-screen flex flex-col sm:flex-row gap-10'>
+        <div className='flex min-h-screen flex-col gap-10 sm:flex-row'>
           <div className='w-full sm:w-2/3'>
             <form className='my-5 sm:my-10'>
               <Input
@@ -57,7 +57,7 @@ const Order = () => {
           </div>
           <div className='w-full sm:w-1/3'>
             <div className='mt-5 sm:mt-10'>
-              <h1 className='block text-lg font-semibold mb-2 dark:text-white'>
+              <h1 className='mb-2 block text-lg font-semibold dark:text-white'>
                 পেমেন্ট করুন
               </h1>
             </div>
@@ -65,31 +65,31 @@ const Order = () => {
               {orderList.map((item, index) => (
                 <p
                   key={index}
-                  className='py-2 flex justify-between items-center'
+                  className='flex items-center justify-between py-2'
                 >
                   <span>{index + 1}। ভ্যানিলা চকলেট ফ্লেভার</span>
                   <span>600</span>
                 </p>
               ))}
-              <p className='py-2 flex justify-between items-center font-semibold'>
+              <p className='flex items-center justify-between py-2 font-semibold'>
                 <span>ডেলিভারি চার্জ</span>
                 <span>30</span>
               </p>
-              <p className='py-2 flex justify-between items-center font-semibold'>
+              <p className='flex items-center justify-between py-2 font-semibold'>
                 <span>মোট টাকা</span>
                 <span>3600</span>
               </p>
-              <p className='py-2 flex justify-between items-center font-semibold'>
+              <p className='flex items-center justify-between py-2 font-semibold'>
                 <span>ডিস্কাউন্ট</span>
                 <span>150</span>
               </p>
-              <p className='py-2 flex justify-between items-center font-semibold'>
+              <p className='flex items-center justify-between py-2 font-semibold'>
                 <span>সর্বমোট</span>
                 <span>3000</span>
               </p>
             </div>
             <div className='mt-5 sm:mt-10'>
-              <h1 className='block text-lg font-semibold mb-2 dark:text-white'>
+              <h1 className='mb-2 block text-lg font-semibold dark:text-white'>
                 পেমেন্ট পরিশোধের পদ্ধতি নির্বাচন করুন
               </h1>
             </div>
@@ -99,27 +99,27 @@ const Order = () => {
                 width={60}
                 height={60}
                 alt='bkash payment'
-                className='border-4 rounded-2xl border-yellow-500'
+                className='rounded-2xl border-4 border-yellow-500'
               />
               <Image
                 src={nagad}
                 width={60}
                 height={60}
                 alt='bkash payment'
-                className='border-4 rounded-2xl border-yellow-500'
+                className='rounded-2xl border-4 border-yellow-500'
               />
               <Image
                 src={cod}
                 width={60}
                 height={60}
                 alt='bkash payment'
-                className='border-4 rounded-2xl border-yellow-500'
+                className='rounded-2xl border-4 border-yellow-500'
               />
             </div>
             <div className='my-10'>
               <button
                 type='button'
-                className='py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-yellow-500 text-yellow-500 select-none hover:border-yellow-400 hover:text-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                className='inline-flex select-none items-center gap-x-2 rounded-lg border border-yellow-500 px-4 py-3 text-sm font-semibold text-yellow-500 hover:border-yellow-400 hover:text-yellow-400 disabled:pointer-events-none disabled:opacity-50 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
               >
                 নিশ্চিত করতে ট্যাপ করে ধরুন
               </button>

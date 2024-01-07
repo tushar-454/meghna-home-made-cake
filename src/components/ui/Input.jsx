@@ -9,16 +9,16 @@ const Input = ({
 }) => {
   return (
     <div>
-      <div className='flex justify-between items-center'>
+      <div className='flex items-center justify-between'>
         <label
           htmlFor={id}
-          className='block text-sm font-semibold mb-2 dark:text-white'
+          className='mb-2 block text-sm font-semibold dark:text-white'
         >
           {displayName}
         </label>
         {isGroup && (
           <a
-            className='text-sm text-froly-600 decoration-2 hover:underline font-medium dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+            className='text-sm font-medium text-froly-600 decoration-2 hover:underline dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
             href='../examples/html/recover-account.html'
           >
             Forgot password?
@@ -29,16 +29,16 @@ const Input = ({
         <input
           {...rest}
           id={id}
-          className='py-3 px-4 block w-full border-gray-200 rounded-lg text-sm outline-none border focus:border-sun-500 focus:ring-sun-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600'
+          className='focus:border-sun-500 focus:ring-sun-500 block w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none disabled:pointer-events-none disabled:opacity-50 dark:border-gray-700 dark:bg-slate-900 dark:text-gray-400 dark:focus:ring-gray-600'
         />
         {error && (
-          <div className='absolute inset-y-0 end-0 flex items-center pointer-events-none pe-3'>
-            <MdError className='text-red-500 text-2xl' />
+          <div className='pointer-events-none absolute inset-y-0 end-0 flex items-center pe-3'>
+            <MdError className='text-2xl text-red-500' />
           </div>
         )}
       </div>
       {error && (
-        <p className='text-xs text-red-600 mt-2' id='password-error'>
+        <p className='mt-2 text-xs text-red-600' id='password-error'>
           {error}
         </p>
       )}

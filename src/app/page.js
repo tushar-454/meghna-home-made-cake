@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section>
       <div className='my-5'>
-        <h1 className='flex flex-col items-center font-black text-2xl sm:text-4xl leading-[2rem] sm:leading-[3rem]'>
+        <h1 className='flex flex-col items-center text-2xl font-black leading-[2rem] sm:text-4xl sm:leading-[3rem]'>
           <span>স্বাগতম </span> <span>মেঘনা হোমমেড কেক স্টোরে</span>
         </h1>
       </div>

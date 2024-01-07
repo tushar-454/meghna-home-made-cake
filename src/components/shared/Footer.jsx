@@ -4,12 +4,12 @@ import Container from '../ui/Container';
 
 const Footer = () => {
   return (
-    <footer className='bg-white rounded-lg dark:bg-gray-900 my-20 sm:my-10'>
+    <footer className='my-20 rounded-lg bg-white dark:bg-gray-900 sm:my-10'>
       <Container>
         <div className='sm:flex sm:items-center sm:justify-between'>
           <a
             href='https://flowbite.com/'
-            className='flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse'
+            className='mb-4 flex items-center space-x-3 rtl:space-x-reverse sm:mb-0'
           >
             <Image
               src={logo}
@@ -18,18 +18,18 @@ const Footer = () => {
               className='rounded-full'
               alt='Logo'
             />
-            <span className='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
+            <span className='self-center whitespace-nowrap text-2xl font-semibold dark:text-white'>
               মেঘনা হোম মেড কেক
             </span>
           </a>
-          <ul className='flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400'>
+          <ul className='mb-6 flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mb-0'>
             <li>
-              <a href='#' className='hover:underline me-4 md:me-6'>
+              <a href='#' className='me-4 hover:underline md:me-6'>
                 আমাদের সম্পর্কে
               </a>
             </li>
             <li>
-              <a href='#' className='hover:underline me-4 md:me-6'>
+              <a href='#' className='me-4 hover:underline md:me-6'>
                 নীতিমালা সমূহ
               </a>
             </li>
@@ -40,8 +40,8 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <hr className='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8' />
-        <span className='block text-sm text-gray-500 sm:text-center dark:text-gray-400'>
+        <hr className='my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8' />
+        <span className='block text-sm text-gray-500 dark:text-gray-400 sm:text-center'>
           © ২০২৩{' '}
           <a href='https://flowbite.com/' className='hover:underline'>
             মেঘনা হোম মেড কেক

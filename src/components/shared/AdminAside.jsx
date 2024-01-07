@@ -2,21 +2,21 @@ import Link from 'next/link';
 
 const AdminAside = () => {
   return (
-    <aside className='bg-white border-r'>
-      <ul className='font-semibold flex flex-col gap-4'>
-        <Link href={'/admin/manage-cakes'} className='p-3 bg-gray-100'>
+    <aside className='border-r bg-white'>
+      <ul className='flex flex-col gap-4 font-semibold'>
+        <Link href={'/admin/manage-cakes'} className='bg-gray-100 p-3'>
           <li>কেক সমূহ</li>
         </Link>
-        <Link href={'/admin/add-cake'} className='p-3 bg-gray-100'>
+        <Link href={'/admin/add-cake'} className='bg-gray-100 p-3'>
           <li>কেক যোগ করুন</li>
         </Link>
-        <Link href={'/admin/orders'} className='p-3 bg-gray-100'>
+        <Link href={'/admin/orders'} className='bg-gray-100 p-3'>
           <li>অর্ডার সমূহ</li>
         </Link>
-        <Link href={'/admin/manage-orders'} className='p-3 bg-gray-100'>
+        <Link href={'/admin/manage-orders'} className='bg-gray-100 p-3'>
           <li>অর্ডার ম্যানেজ</li>
         </Link>
-        <Link href={'/admin/update-cake'} className='p-3 bg-gray-100'>
+        <Link href={'/admin/update-cake'} className='bg-gray-100 p-3'>
           <li>কেকের তথ্য আপডেট</li>
         </Link>
       </ul>

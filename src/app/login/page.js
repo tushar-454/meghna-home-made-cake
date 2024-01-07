@@ -8,12 +8,12 @@ const AdminLogin = () => {
   return (
     <section className='min-h-screen bg-white dark:bg-gray-900'>
       <Container>
-        <main className='w-full max-w-md mx-auto p-6 '>
-          <div className='mt-7 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700 relative'>
+        <main className='mx-auto w-full max-w-md p-6 '>
+          <div className='relative mt-7 rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800'>
             <div className='p-4 sm:p-7'>
               <div className='text-center'>
                 <Link href={'/'}>
-                  <span className='absolute -right-0 -top-0 w-10 h-10 bg-slate-100 text-sun-900 rounded-tr-xl rounded-bl-xl flex justify-center items-center text-2xl cursor-pointer transition-all hover:bg-slate-200 active:bg-slate-300'>
+                  <span className='text-sun-900 absolute -right-0 -top-0 flex h-10 w-10 cursor-pointer items-center justify-center rounded-bl-xl rounded-tr-xl bg-slate-100 text-2xl transition-all hover:bg-slate-200 active:bg-slate-300'>
                     <RxCross2 />
                   </span>
                 </Link>

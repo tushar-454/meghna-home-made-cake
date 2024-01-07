@@ -5,7 +5,7 @@ const TextArea = ({ displayName, id, error, isRequired = true, ...rest }) => {
     <div className='my-5'>
       <label
         htmlFor={id}
-        className='block text-lg font-semibold mb-2 dark:text-white'
+        className='mb-2 block text-lg font-semibold dark:text-white'
       >
         <span className='flex gap-1'>
           {displayName}
@@ -21,16 +21,16 @@ const TextArea = ({ displayName, id, error, isRequired = true, ...rest }) => {
           {...rest}
           id={id}
           name={id}
-          className={`py-3 px-4 block w-full outline-none border   border-yellow-500 rounded-lg focus:border-yellow-600 transition-all dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 ${
+          className={`block w-full rounded-lg border border-yellow-500 px-4   py-3 outline-none transition-all focus:border-yellow-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 ${
             2 > 4
-              ? 'border-red-500 rounded-lg text-sm focus:border-red-500 focus:ring-red-500'
+              ? 'rounded-lg border-red-500 text-sm focus:border-red-500 focus:ring-red-500'
               : undefined
           }`}
         ></textarea>
         {error && (
-          <div className='absolute inset-y-0 end-0 flex items-center pointer-events-none pe-3'>
+          <div className='pointer-events-none absolute inset-y-0 end-0 flex items-center pe-3'>
             <svg
-              className='flex-shrink-0 h-4 w-4 text-red-500'
+              className='h-4 w-4 flex-shrink-0 text-red-500'
               xmlns='http://www.w3.org/2000/svg'
               width='24'
               height='24'
@@ -50,7 +50,7 @@ const TextArea = ({ displayName, id, error, isRequired = true, ...rest }) => {
       </div>
       {error && (
         <p
-          className='text-sm text-red-600 mt-2'
+          className='mt-2 text-sm text-red-600'
           id='hs-validation-name-error-helper'
         >
           {error}

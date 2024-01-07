@@ -5,7 +5,7 @@ const AdminLayout = ({ children }) => {
   return (
     <section>
       <Container>
-        <div className='border min-h-screen my-5 flex gap-5'>
+        <div className='my-5 flex min-h-screen gap-5 border'>
           <AdminAside />
           <div className='flex-grow'>{children}</div>
         </div>

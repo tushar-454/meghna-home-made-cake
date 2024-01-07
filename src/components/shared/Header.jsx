@@ -36,7 +36,7 @@ const Header = () => {
     <header className='bg-slate-100 dark:bg-slate-900'>
       <Container>
         <div className='hidden sm:block'>
-          <div className='flex justify-between items-center py-3'>
+          <div className='flex items-center justify-between py-3'>
             <div>
               <Link href={'/'}>
                 <Image
@@ -52,7 +52,7 @@ const Header = () => {
               {navItems.map((item, index) => (
                 <Link
                   key={index}
-                  className='font-bold text-lg 
+                  className='text-lg font-bold 
                 text-slate-700 dark:text-slate-200'
                   href={item.path}
                 >
@@ -66,14 +66,14 @@ const Header = () => {
 
         <div
           style={{ zIndex: '9999' }}
-          className='block sm:hidden w-full fixed left-0 bottom-0'
+          className='fixed bottom-0 left-0 block w-full sm:hidden'
         >
-          <div className='w-full grid items-start h-10 bg-slate-200'>
-            <div className='flex gap-1 justify-between items-center px-5 relative -top-8 transition-all'>
+          <div className='grid h-10 w-full items-start bg-slate-200'>
+            <div className='relative -top-8 flex items-center justify-between gap-1 px-5 transition-all'>
               {navItems.map((item, index) => (
                 <Link
                   key={index}
-                  className='w-16 h-16 border-8 bg-white border-white flex justify-center items-center rounded-full shadow-xl z-50'
+                  className='z-50 flex h-16 w-16 items-center justify-center rounded-full border-8 border-white bg-white shadow-xl'
                   href={item.path}
                 >
                   {<item.icon className='text-3xl text-slate-900' />}

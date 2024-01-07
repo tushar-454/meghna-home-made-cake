@@ -17,19 +17,19 @@ const TrackOrder = () => {
         <Title>আপনার অর্ডার ট্রেক করুন</Title>
         <div className='my-10 min-h-screen'>
           <form>
-            <div className='relative flex space-x-3 p-3 bg-white border rounded-lg shadow-lg shadow-gray-100 dark:bg-slate-900 dark:border-gray-700 dark:shadow-gray-900/[.2]'>
+            <div className='relative flex space-x-3 rounded-lg border bg-white p-3 shadow-lg shadow-gray-100 dark:border-gray-700 dark:bg-slate-900 dark:shadow-gray-900/[.2]'>
               <div className='flex-[1_0_0%]'>
                 <input
                   type='text'
                   name='hs-search-article-1'
                   id='hs-search-article-1'
-                  className='py-2.5 px-4 block w-full border-transparent rounded-lg outline-none focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600'
+                  className='block w-full rounded-lg border-transparent px-4 py-2.5 outline-none focus:border-blue-500 focus:ring-blue-500 dark:border-transparent dark:bg-slate-900 dark:text-gray-400 dark:focus:ring-gray-600'
                   placeholder='অর্ডার করার পর যে আইডি টি পেয়েছিলেন তা এখানে লিখুন'
                 />
               </div>
               <div className='flex-[0_0_auto]'>
                 <a
-                  className='w-[46px] h-[46px] inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                  className='inline-flex h-[46px] w-[46px] items-center justify-center gap-x-2 rounded-lg border border-transparent bg-blue-600 text-sm font-semibold text-white hover:bg-blue-700 disabled:pointer-events-none disabled:opacity-50 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
                   href='#'
                 >
                   <IoSearchOutline className='text-xl' />
@@ -39,11 +39,11 @@ const TrackOrder = () => {
           </form>
           {/* delivery details  */}
           <div className='my-10 space-y-5'>
-            <h1 className='py-4 text-2xl font-semibold underline underline-offset-4 text-slate-900 dark:text-gray-200'>
+            <h1 className='py-4 text-2xl font-semibold text-slate-900 underline underline-offset-4 dark:text-gray-200'>
               অর্ডার এর বর্ণনা
             </h1>
             {/* order card  */}
-            <div className='w-full bg-white shadow p-3 border-l-8 border-green-500 rounded-lg'>
+            <div className='w-full rounded-lg border-l-8 border-green-500 bg-white p-3 shadow'>
               <h1 className='text-lg font-semibold text-slate-500 dark:text-gray-200'>
                 অর্ডার আইডি
               </h1>
@@ -52,7 +52,7 @@ const TrackOrder = () => {
               </span>
             </div>
             {/* order card  */}
-            <div className='w-full bg-white shadow p-3 border-l-8 border-green-500 rounded-lg'>
+            <div className='w-full rounded-lg border-l-8 border-green-500 bg-white p-3 shadow'>
               <h1 className='text-lg font-semibold text-slate-500 dark:text-gray-200'>
                 অর্ডার ডেলিভারি তথ্য
               </h1>
@@ -62,23 +62,23 @@ const TrackOrder = () => {
               <p className='text-md font-semibold text-slate-600 dark:text-gray-200'>
                 তুষার ইমরান
               </p>
-              <p className='pb-4 text-md font-semibold text-slate-500 dark:text-gray-200'>
+              <p className='text-md pb-4 font-semibold text-slate-500 dark:text-gray-200'>
                 মেঘনা থানা, রাধানগর ইউনিয়ন, মুগারচর গ্রাম, সরা বাড়ী
               </p>
             </div>
             {/* order card  */}
-            <div className='w-full bg-white shadow p-3 border-l-8 border-green-500 rounded-lg'>
+            <div className='w-full rounded-lg border-l-8 border-green-500 bg-white p-3 shadow'>
               <h1 className='text-lg font-semibold text-slate-500 dark:text-gray-200'>
                 ডেলিভারি ম্যান
               </h1>
               <div className='flex items-center gap-5 py-2'>
-                <div className='w-16 h-16 object-cover rounded-full'>
+                <div className='h-16 w-16 rounded-full object-cover'>
                   <Image
                     src={'https://cutt.ly/cwDaR8Pp'}
                     width={60}
                     height={60}
                     alt='delivery man'
-                    className='w-full h-full object-cover rounded-full'
+                    className='h-full w-full rounded-full object-cover'
                   />
                 </div>
                 <div className='flex flex-col'>
@@ -93,12 +93,12 @@ const TrackOrder = () => {
             </div>
             {/* order card  */}
             <div className='w-full overflow-auto'>
-              <div className='w-[768px] md:w-full bg-white shadow p-3 border-l-8 border-green-500 rounded-lg'>
+              <div className='w-[768px] rounded-lg border-l-8 border-green-500 bg-white p-3 shadow md:w-full'>
                 <h1 className='text-lg font-semibold text-slate-500 dark:text-gray-200'>
                   টাইমলাইন
                 </h1>
-                <div className='flex flex-col gap-5 items-center py-2'>
-                  <div className='w-full flex justify-between'>
+                <div className='flex flex-col items-center gap-5 py-2'>
+                  <div className='flex w-full justify-between'>
                     <Image src={pending} width={50} height={50} alt='pending' />
                     <Image src={confirm} width={50} height={50} alt='pending' />
                     <Image src={cooking} width={50} height={50} alt='pending' />
@@ -122,11 +122,11 @@ const TrackOrder = () => {
                     />
                   </div>
                   <div className='w-full border-2 border-dashed'></div>
-                  <div className='timeLineCheckRoot w-full flex justify-between'>
-                    <p className='w-[120px] text- text-base font-semibold text-slate-700 dark:text-gray-200'>
+                  <div className='timeLineCheckRoot flex w-full justify-between'>
+                    <p className='text- w-[120px] text-base font-semibold text-slate-700 dark:text-gray-200'>
                       পেন্ডিং
                     </p>
-                    <p className='w-[120px] text- text-base font-semibold text-slate-700 dark:text-gray-200'>
+                    <p className='text- w-[120px] text-base font-semibold text-slate-700 dark:text-gray-200'>
                       নিশ্চিত হলো
                     </p>
                     <p className='w-[120px] text-center text-base font-semibold text-slate-700 dark:text-gray-200'>
@@ -146,7 +146,7 @@ const TrackOrder = () => {
               </div>
             </div>
             {/* order card  */}
-            <div className='w-full bg-white shadow p-3 border-l-8 border-green-500 rounded-lg'>
+            <div className='w-full rounded-lg border-l-8 border-green-500 bg-white p-3 shadow'>
               <h1 className='text-lg font-semibold text-slate-500 dark:text-gray-200'>
                 পেমেন্ট পরিশোধের পদ্ধতি
               </h1>
@@ -155,31 +155,31 @@ const TrackOrder = () => {
                 width={60}
                 height={60}
                 alt='bkash payment'
-                className='my-2 border-4 rounded-2xl border-yellow-500'
+                className='my-2 rounded-2xl border-4 border-yellow-500'
               />
               <h1 className='text-lg font-semibold text-slate-700 dark:text-gray-200'>
                 ৩০০০ টাকা পে করা হয়েছে।
               </h1>
             </div>
             {/* order card  */}
-            <div className='w-full bg-white shadow p-3 border-l-8 border-green-500 rounded-lg'>
+            <div className='w-full rounded-lg border-l-8 border-green-500 bg-white p-3 shadow'>
               <h1 className='text-lg font-semibold text-slate-500 dark:text-gray-200'>
                 কেক হাতে পাবার পর পিন কোডটি দিয়ে নিশ্চিত করুন
               </h1>
               <form className='mt-5'>
-                <div className='relative flex space-x-3 p-3 bg-white border rounded-lg shadow-lg shadow-gray-100 dark:bg-slate-900 dark:border-gray-700 dark:shadow-gray-900/[.2]'>
+                <div className='relative flex space-x-3 rounded-lg border bg-white p-3 shadow-lg shadow-gray-100 dark:border-gray-700 dark:bg-slate-900 dark:shadow-gray-900/[.2]'>
                   <div className='flex-[1_0_0%]'>
                     <input
                       type='number'
                       name='hs-search-article-1'
                       id='hs-search-article-1'
-                      className='py-2.5 px-4 block w-full border-transparent rounded-lg outline-none focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600'
+                      className='block w-full rounded-lg border-transparent px-4 py-2.5 outline-none focus:border-blue-500 focus:ring-blue-500 dark:border-transparent dark:bg-slate-900 dark:text-gray-400 dark:focus:ring-gray-600'
                       placeholder='এখানে কোডটি লিখুন'
                     />
                   </div>
                   <div className='flex-[0_0_auto]'>
                     <a
-                      className='w-fit h-[46px] px-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                      className='inline-flex h-[46px] w-fit items-center justify-center gap-x-2 rounded-lg border border-transparent bg-blue-600 px-3 text-sm font-semibold text-white hover:bg-blue-700 disabled:pointer-events-none disabled:opacity-50 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
                       href='#'
                     >
                       নিশ্চিত করুন
@@ -189,10 +189,10 @@ const TrackOrder = () => {
               </form>
             </div>
             {/* order card  */}
-            <div className='w-full bg-white shadow p-3 border-l-8 border-green-500 rounded-lg'>
+            <div className='w-full rounded-lg border-l-8 border-green-500 bg-white p-3 shadow'>
               <button
                 type='button'
-                className='py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-yellow-500 text-white hover:bg-yellow-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                className='inline-flex items-center gap-x-2 rounded-lg border border-transparent bg-yellow-500 px-4 py-3 text-sm font-semibold text-white hover:bg-yellow-600 disabled:pointer-events-none disabled:opacity-50 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
               >
                 রিভিও দিতে এখানে ট্যাপ করুন
               </button>
