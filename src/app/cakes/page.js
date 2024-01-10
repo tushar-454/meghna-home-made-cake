@@ -1,30 +1,13 @@
 import Container from '@/components/ui/Container';
 import Title from '@/components/ui/Title';
+import getApiData from '@/lib/getApiData';
 import Image from 'next/image';
 import { IoSearchOutline } from 'react-icons/io5';
 import { TbCurrencyTaka } from 'react-icons/tb';
-const popularCakesData = [
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-  {},
-];
 
-const Cakes = () => {
+const Cakes = async () => {
+  const {data:allcakes} = await getApiData();
+  console.log(allcakes);
   return (
     <section>
       <Container>
@@ -33,7 +16,7 @@ const Cakes = () => {
           <div className='relative z-10 flex space-x-3 rounded-lg border bg-white p-3 shadow-lg shadow-gray-100 dark:border-gray-700 dark:bg-slate-900 dark:shadow-gray-900/[.2]'>
             <div className='flex-[1_0_0%]'>
               <label
-                for='hs-search-article-1'
+                htmlFor='hs-search-article-1'
                 className='block text-sm font-medium text-gray-700 dark:text-white'
               >
                 <span className='sr-only'>Search article</span>
@@ -58,7 +41,7 @@ const Cakes = () => {
         </form>
         {/* <!-- Grid --> */}
         <div className='my-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-          {popularCakesData.map((cake, index) => (
+          {allcakes.map((cake, index) => (
             <div
               key={index}
               className='group flex h-full flex-col rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-slate-900 dark:shadow-slate-700/[.7]'
@@ -74,24 +57,23 @@ const Cakes = () => {
               </div>
               <div className='p-4 md:p-6'>
                 <span className='mb-1 block text-xs font-semibold uppercase text-blue-600 dark:text-blue-500'>
-                  চকলেট ফ্লেভার
+                  {cake.flavour}
                 </span>
                 <h3 className='text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white'>
-                  ভ্যানিলা চকলেট কেক
+                  {cake.name}
                 </h3>
                 <p className='mt-3 text-gray-500'>
-                  ২ পাউন্ড এর সাদা ক্রিপ এর সাথে স্পেশাল কিটকেট চকলেট ফ্লেভারের
-                  সাথে থাকছে সুন্দর সাজ সজ্জা
+                 {cake.description}
                 </p>
                 <h3 className='mt-5 flex items-center text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white'>
                   <span>
                     <span className='flex'>
-                      মূল্য (পাউন্ড) → ৬০০
+                      মূল্য (পাউন্ড) → {cake.salePrice}
                       <TbCurrencyTaka />
                     </span>{' '}
                   </span>
                   <sub>
-                    <del className='text-red-400'>৮০০</del>
+                    <del className='text-red-400'>{cake.price}</del>
                   </sub>
                 </h3>
               </div>
