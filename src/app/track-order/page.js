@@ -11,6 +11,7 @@ import Image from 'next/image';
 import { IoSearchOutline } from 'react-icons/io5';
 
 const TrackOrder = () => {
+  const deliveryManImg = 'https://cutt.ly/cwDaR8Pp';
   return (
     <section className='bg-slate-50'>
       <Container>
@@ -74,7 +75,7 @@ const TrackOrder = () => {
               <div className='flex items-center gap-5 py-2'>
                 <div className='h-16 w-16 rounded-full object-cover'>
                   <Image
-                    src={'https://cutt.ly/cwDaR8Pp'}
+                    src={deliveryManImg}
                     width={60}
                     height={60}
                     alt='delivery man'
