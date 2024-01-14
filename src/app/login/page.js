@@ -1,6 +1,5 @@
-import ButtonFill from '@/components/ui/ButtonFill';
+import AdminLoginForm from '@/components/shared/AdminLoginForm';
 import Container from '@/components/ui/Container';
-import Input from '@/components/ui/Input';
 import Link from 'next/link';
 import { RxCross2 } from 'react-icons/rx';
 
@@ -24,27 +23,7 @@ const AdminLogin = () => {
               </div>
 
               <div className='mt-5'>
-                {/* <!-- Form --> */}
-                <form>
-                  <div className='grid gap-y-4'>
-                    <Input
-                      displayName='ইমেইল'
-                      type='email'
-                      id={'email'}
-                      name='email'
-                      placeholder={'example@gmail.com'}
-                    />
-                    <Input
-                      displayName='পাসওয়ার্ড'
-                      type='password'
-                      id={'password'}
-                      name='password'
-                      placeholder={'s909j*(^&'}
-                    />
-                    <ButtonFill displayName={'লগইন করুন'} />
-                  </div>
-                </form>
-                {/* <!-- End Form --> */}
+                <AdminLoginForm />
               </div>
             </div>
           </div>
