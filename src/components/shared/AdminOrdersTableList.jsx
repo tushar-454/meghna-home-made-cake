@@ -32,6 +32,9 @@ const AdminOrdersTableList = async () => {
             <th scope='col' class='px-6 py-3 whitespace-nowrap'>
               পেমেন্ট স্ট্যাটাস
             </th>
+            <th scope='col' class='px-6 py-3 whitespace-nowrap'>
+              অ্যাকশন
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -73,6 +76,11 @@ const AdminOrdersTableList = async () => {
               </td>
               <td class='px-6 py-4'>{order.totalMoney}</td>
               <td class='px-6 py-4'>{order.paymentStatus}</td>
+              <td class='px-6 py-4'>
+                <button>
+                  {order.orderStatus === 'pending' ? 'নিশ্চিত করুন' : 'নিশ্চিত'}
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>
