@@ -1,5 +1,6 @@
 import getApiData from '@/lib/getApiData';
 import Link from 'next/link';
+import ConfirmButton from './ConfirmButton';
 
 const AdminOrdersTableList = async () => {
   const { data: allorders } = await getApiData('admin/getallorders');
@@ -76,11 +77,7 @@ const AdminOrdersTableList = async () => {
               </td>
               <td class='px-6 py-4'>{order.totalMoney}</td>
               <td class='px-6 py-4'>{order.paymentStatus}</td>
-              <td class='px-6 py-4'>
-                <button>
-                  {order.orderStatus === 'pending' ? 'নিশ্চিত করুন' : 'নিশ্চিত'}
-                </button>
-              </td>
+              <ConfirmButton id={order._id} orderStatus={order.orderStatus} />
             </tr>
           ))}
         </tbody>
