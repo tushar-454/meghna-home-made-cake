@@ -7,7 +7,7 @@ const AdminOrdersTableList = async () => {
   return (
     <div class='mr-5 relative overflow-x-auto shadow-md sm:rounded-lg'>
       <table class='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400'>
-        <thead class='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
+        <thead class='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 whitespace-nowrap'>
           <tr>
             <th scope='col' class='px-6 py-3'>
               কাস্টমার তথ্য
@@ -27,13 +27,13 @@ const AdminOrdersTableList = async () => {
             <th scope='col' class='px-6 py-3'>
               কেকের তথ্য
             </th>
-            <th scope='col' class='px-6 py-3  whitespace-nowrap'>
+            <th scope='col' class='px-6 py-3'>
               মোট টাকা
             </th>
             <th scope='col' class='px-6 py-3 whitespace-nowrap'>
               পেমেন্ট স্ট্যাটাস
             </th>
-            <th scope='col' class='px-6 py-3 whitespace-nowrap'>
+            <th scope='col' class='px-6 py-3'>
               অ্যাকশন
             </th>
           </tr>

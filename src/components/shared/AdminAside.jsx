@@ -3,7 +3,7 @@ import Link from 'next/link';
 const AdminAside = () => {
   return (
     <aside className='border-r bg-white'>
-      <ul className='flex flex-col gap-4 font-semibold'>
+      <ul className='flex flex-col gap-4 font-semibold whitespace-nowrap'>
         <Link href={'/admin/manage-cakes'} className='bg-gray-100 p-3'>
           <li>কেক সমূহ</li>
         </Link>
