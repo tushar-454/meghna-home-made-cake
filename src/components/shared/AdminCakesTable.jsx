@@ -1,5 +1,6 @@
 import getApiData from '@/lib/getApiData';
 import Image from 'next/image';
+import AdminCakeDeleteBtn from './AdminCakeDeleteBtn';
 
 const AdminCakesTable = async () => {
   const { data: allcakes } = await getApiData('admin/getallcakes');
@@ -45,10 +46,11 @@ const AdminCakesTable = async () => {
               <td class='px-6 py-4'>{cake.name}</td>
               <td class='px-6 py-4'>{cake.flavour}</td>
               <td class='px-6 py-4'>{cake.salePrice}</td>
-              <td class='px-6 py-4'>
+              <td class='px-6 py-4 flex gap-4'>
                 <p class='cursor-pointer font-medium text-supernova-600 dark:text-supernova-500 hover:underline'>
                   আপডেট করুন
                 </p>
+                <AdminCakeDeleteBtn cakeId={cake._id} />
               </td>
             </tr>
           ))}
