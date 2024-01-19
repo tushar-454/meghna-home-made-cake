@@ -8,11 +8,11 @@ const Input = ({
   ...rest
 }) => {
   return (
-    <div>
+    <div className='w-full'>
       <div className='flex items-center justify-between'>
         <label
           htmlFor={id}
-          className='mb-2 block text-sm font-semibold dark:text-white'
+          className='my-2 block text-sm font-semibold dark:text-white'
         >
           {displayName}
         </label>
